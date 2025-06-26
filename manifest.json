@@ -1,0 +1,60 @@
+{
+  "short_name": "Project RED",
+  "name": "Project RED - Blood Donor Database",
+  "description": "Connect with verified blood donors and save lives through secure, privacy-focused blood donation coordination.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#d32f2f",
+  "background_color": "#ffffff",
+  "categories": ["medical", "health", "social", "lifestyle"],
+  "lang": "en",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Find Donors",
+      "short_name": "Find",
+      "description": "Search for blood donors in your area",
+      "url": "/PROJECTRED/?action=search",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Profile",
+      "short_name": "Profile",
+      "description": "Update your donor profile",
+      "url": "/PROJECTRED/?action=profile",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
