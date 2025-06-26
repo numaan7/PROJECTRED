@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project RED - Blood Donor Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; }
+        p { font-size: 1.2em; margin-bottom: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #d32f2f;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+    </style>
+    <script>
+        // Redirect to main app with the path
+        setTimeout(() => {
+            const path = window.location.pathname.replace('/PROJECTRED', '');
+            window.location.href = '/PROJECTRED/' + (path === '/404.html' ? '' : path.substring(1));
+        }, 0);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🩸 Project RED</h1>
+        <p>Redirecting to the Blood Donor Database...</p>
+        <p>If you're not redirected automatically, click below:</p>
+        <a href="/PROJECTRED/" class="btn">Go to Project RED</a>
+    </div>
+</body>
+</html>

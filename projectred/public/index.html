@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#d32f2f" />
+    
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Project RED - Your trusted blood donor database platform. Connect with verified blood donors, find compatible donors in your area, and save lives. Secure, privacy-focused blood donation coordination following NBTC and NACO guidelines."
+    />
+    <meta name="keywords" content="blood donor, blood donation, blood bank, emergency blood, blood group, blood compatibility, life saver, medical emergency, donate blood, find blood donor, India blood donors, NBTC, NACO, blood donation guidelines, save lives" />
+    <meta name="author" content="Mohammed Numaan" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Project RED - Blood Donor Database | Save Lives, Connect Donors" />
+    <meta property="og:description" content="Connect with verified blood donors in your area. Secure, privacy-focused platform following medical guidelines. Join the community of life-savers today." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://numaan7.github.io/PROJECTRED/logo512.png" />
+    <meta property="og:url" content="https://numaan7.github.io/PROJECTRED" />
+    <meta property="og:site_name" content="Project RED" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Project RED - Blood Donor Database | Save Lives" />
+    <meta name="twitter:description" content="Connect with verified blood donors. Secure, privacy-focused blood donation coordination platform." />
+    <meta name="twitter:image" content="https://numaan7.github.io/PROJECTRED/logo512.png" />
+    
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.country" content="India" />
+    <meta name="language" content="English" />
+    <link rel="canonical" href="https://numaan7.github.io/PROJECTRED" />
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Project RED - Blood Donor Database",
+      "alternateName": "Project RED",
+      "description": "Secure blood donor database platform connecting verified donors with recipients following NBTC and NACO medical guidelines.",
+      "url": "https://numaan7.github.io/PROJECTRED",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "Free",
+        "priceCurrency": "INR"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Mohammed Numaan",
+        "url": "https://in.linkedin.com/in/mohammed-numaan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Project RED"
+      },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://numaan7.github.io/PROJECTRED",
+        "object": "Blood Donor Registration and Search"
+      }
+    }
+    </script>
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Project RED" />
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/logo192.png" />
+    <meta name="msapplication-TileColor" content="#d32f2f" />
+    
+    <!-- Additional Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Project RED - Blood Donor Database | Save Lives, Connect Donors</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+        <h2>Project RED - Blood Donor Database</h2>
+        <p>You need to enable JavaScript to run this app and help save lives by connecting with blood donors.</p>
+        <p>This platform helps connect blood donors with recipients while maintaining privacy and following medical guidelines.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      // Register service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(function(error) {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+      
+      // Handle URL parameters for PWA shortcuts
+      const urlParams = new URLSearchParams(window.location.search);
+      const action = urlParams.get('action');
+      if (action) {
+        localStorage.setItem('pwa_shortcut_action', action);
+      }
+    </script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
