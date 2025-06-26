@@ -128,7 +128,7 @@ const PWAInstallPrompt = () => {
           <Box textAlign="center" py={2}>
             <Box mb={3}>
               <img 
-                src="/logo192.png" 
+                src="/PROJECTRED/logo192.png" 
                 alt="Project RED Logo" 
                 style={{ width: 80, height: 80, borderRadius: 16 }}
               />
